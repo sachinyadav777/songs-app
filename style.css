@@ -10,7 +10,13 @@
 }
 
 body {
+    height: 100%;
     background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
 }
 
 nav {
@@ -40,7 +46,7 @@ li {
 }
 
 .container {
-    min-height: 79vh;
+    min-height: 80vh;
     background-color: black;
     width: 80%;
     margin: 8px auto;
