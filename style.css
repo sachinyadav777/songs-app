@@ -74,6 +74,8 @@ li {
     padding: 5px 0;
     color: wheat;
     cursor: pointer;
+    position: relative;
+    z-index: 100;
 }
 
 .inner-icon {
