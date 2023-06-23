@@ -52,7 +52,7 @@ li {
     margin: 8px auto;
     display: flex;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 5px 80px 5px 80px;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
