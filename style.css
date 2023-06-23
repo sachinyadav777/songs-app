@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    background-color: black;
+    color: wheat;
+    height: 50px;
+}
+
+li {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.brand img {
+    width: 44px;
+    margin-right: 2px;
+}
+
+.container {
+    min-height: 79vh;
+    background-color: black;
+    width: 80%;
+    margin: 8px auto;
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.button {
+    background: black;
+    height: 65px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#progresbar {
+    width: 80%;
+    accent-color: #2ecc71;
+    cursor: grab
+}
+
+.fa-icon {
+    font-size: 30px;
+    padding: 5px 0;
+    color: wheat;
+    cursor: pointer;
+}
+
+.inner-icon {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.song-item img {
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+}
+
+.song-item {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 25px;
+    margin-top: 10px;
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
+
+h2 {
+    color: white;
+}
+
+.songinfo {
+    position: absolute;
+    left: 10vw;
+    color: wheat;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.button img {
+    width: 70px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.effect {
+    background: green;
+    transform: scale(1.1);
+    box-shadow: -1px 1px 25px darkgray;
+}
+
+.effect img {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.currentime {
+    position: absolute;
+    color: wheat;
+    right: 10vw;
+    top: 5vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #progresbar {
+        width: 85%;
+    }
+
+    .currentime {
+        font-size: 15px;
+        right: 8vw;
+    }
+
+    .songinfo {
+        left: 8vw;
+        top: 25px;
+        font-size: 15px;
+    }
+
+    .songinfo img {
+        width: 60px;
+    }
+
+    .icon .fa-icon {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 15px;
+    }
+
+    .song-item {
+        font-size: 10px;
+    }
+
+    .inner-icon {
+        font-size: 10px;
+    }
+
+    #progresbar {
+        height: 5px;
+        margin-bottom: 5px;
+    }
+
+    .songname {
+        position: relative;
+        top: 15px;
+        left: -58px;
+        font-size: 10px;
+    }
+
+    .duration {
+        position: relative;
+        top: 15px;
+        left: -58px;
+        font-size: 10px;
+    }
+}
