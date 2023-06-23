@@ -46,7 +46,7 @@ li {
 }
 
 .container {
-    min-height: 80vh;
+    height: 80%;
     background-color: black;
     width: 80%;
     margin: 8px auto;
